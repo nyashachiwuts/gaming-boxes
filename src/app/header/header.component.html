@@ -1,0 +1,12 @@
+<header class="header">
+    <nav>
+      <ul>
+        <li *ngIf='!user'>
+          <a href='https://api-staging.csgoroll.com/auth/steam?redirectUri=http://localhost:4200'>Login</a>
+        </li>
+        <li *ngIf='user'>
+          {{user?.name}} ({{walletSum}})
+        </li>
+      </ul>
+    </nav>
+  </header>

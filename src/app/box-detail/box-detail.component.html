@@ -1,0 +1,13 @@
+<div class='box-container'>
+    <div class='box-detail'>
+      <button (click)="closeBox()">X</button>
+      <div *ngIf="openedBox">
+        <p>ID: {{openedBox?.itemVariant.id}}</p>
+        <p>Name: {{openedBox?.itemVariant.name}}</p>
+        <p>Value: {{openedBox?.itemVariant.value}}</p>
+      </div>
+      <div *ngIf="openedErrors" class="errors">
+        {{openedErrors}}
+      </div>
+    </div>
+  </div>

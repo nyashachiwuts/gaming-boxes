@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-2 col-xs-12" *ngFor="let box of allBoxes">
+      <a class="card" id={{box.id} [routerLink]="['/box', box.id]" routerLinkActive='active'>
+        <img src={{box.iconUrl}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4>{{box.name}}</h4>
+          <p><span>TKN </span>{{box.cost}}</p>
+        </div>
+      </a>
+      <br>
+    </div>
+  </div>
